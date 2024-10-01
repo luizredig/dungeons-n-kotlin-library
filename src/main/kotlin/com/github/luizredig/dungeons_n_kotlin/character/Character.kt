@@ -1,8 +1,8 @@
 package com.github.luizredig.dungeons_n_kotlin.character
 
 import com.github.luizredig.dungeons_n_kotlin.attributes.Attributes
+import com.github.luizredig.dungeons_n_kotlin.breeds.IBreed
 import dungeons_n_kotlin.classes.modifiers.AttributesModifier
-import dungeons_n_kotlin.interfaces.breed.IBreed
 
 class Character {
     lateinit var name: String
