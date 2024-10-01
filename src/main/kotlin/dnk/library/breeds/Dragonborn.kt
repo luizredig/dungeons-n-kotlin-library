@@ -1,6 +1,6 @@
-package com.github.luizredig.dungeons_n_kotlin.breeds
+package dnk.library.breeds
 
-class HalfOrc  : IBreed {
+class Dragonborn : dnk.library.breeds.IBreed {
     override fun getStrength(): Int {
         return 2
     }
@@ -10,7 +10,7 @@ class HalfOrc  : IBreed {
     }
 
     override fun getConstitution(): Int {
-        return 1
+        return 0
     }
 
     override fun getIntelligence(): Int {
@@ -22,7 +22,7 @@ class HalfOrc  : IBreed {
     }
 
     override fun getCharisma(): Int {
-        return 0
+        return 1
     }
 
 }

@@ -1,6 +1,6 @@
-package com.github.luizredig.dungeons_n_kotlin.breeds
+package dnk.library.breeds
 
-class Human : IBreed {
+class Human : dnk.library.breeds.IBreed {
     override fun getStrength(): Int {
         return 1
     }

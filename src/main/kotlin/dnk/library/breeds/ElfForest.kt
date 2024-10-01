@@ -1,6 +1,6 @@
-package com.github.luizredig.dungeons_n_kotlin.breeds
+package dnk.library.breeds
 
-class ElfForest : IBreed {
+class ElfForest : dnk.library.breeds.IBreed {
     override fun getStrength(): Int {
         return 0
     }

@@ -1,6 +1,6 @@
-package com.github.luizredig.dungeons_n_kotlin.breeds
+package dnk.library.breeds
 
-class GnomeForest : IBreed {
+class Gnome : dnk.library.breeds.IBreed {
     override fun getStrength(): Int {
         return 0
     }
@@ -14,11 +14,11 @@ class GnomeForest : IBreed {
     }
 
     override fun getIntelligence(): Int {
-        return 2
+        return 0
     }
 
     override fun getWisdom(): Int {
-        return 0
+        return 2
     }
 
     override fun getCharisma(): Int {

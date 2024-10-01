@@ -1,15 +1,15 @@
-package com.github.luizredig.dungeons_n_kotlin.character
+package dnk.library.character
 
-import com.github.luizredig.dungeons_n_kotlin.attributes.Attributes
-import com.github.luizredig.dungeons_n_kotlin.breeds.IBreed
+import dnk.library.attributes.Attributes
+import dnk.library.breeds.IBreed
 import dungeons_n_kotlin.classes.modifiers.AttributesModifier
 
 class Character {
     lateinit var name: String
 
-    lateinit var breed: IBreed
+    lateinit var breed: dnk.library.breeds.IBreed
 
-    lateinit var attributes: Attributes
+    lateinit var attributes: dnk.library.attributes.Attributes
 
     var healthPoints: Int = 10
 

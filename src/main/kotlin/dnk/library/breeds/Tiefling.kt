@@ -1,8 +1,8 @@
-package com.github.luizredig.dungeons_n_kotlin.breeds
+package dnk.library.breeds
 
-class DwarfMountain : IBreed {
+class Tiefling  : dnk.library.breeds.IBreed {
     override fun getStrength(): Int {
-        return 1
+        return 0
     }
 
     override fun getDexterity(): Int {
@@ -10,11 +10,11 @@ class DwarfMountain : IBreed {
     }
 
     override fun getConstitution(): Int {
-        return 2
+        return 0
     }
 
     override fun getIntelligence(): Int {
-        return 0
+        return 1
     }
 
     override fun getWisdom(): Int {
@@ -22,7 +22,7 @@ class DwarfMountain : IBreed {
     }
 
     override fun getCharisma(): Int {
-        return 0
+        return 2
     }
 
 }

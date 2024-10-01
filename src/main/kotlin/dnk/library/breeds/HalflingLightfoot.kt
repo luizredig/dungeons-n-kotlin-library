@@ -1,12 +1,12 @@
-package com.github.luizredig.dungeons_n_kotlin.breeds
+package dnk.library.breeds
 
-class HalfElf : IBreed {
+class HalflingLightfoot : dnk.library.breeds.IBreed {
     override fun getStrength(): Int {
         return 0
     }
 
     override fun getDexterity(): Int {
-        return 2
+        return 1
     }
 
     override fun getConstitution(): Int {
@@ -14,7 +14,7 @@ class HalfElf : IBreed {
     }
 
     override fun getIntelligence(): Int {
-        return 1
+        return 0
     }
 
     override fun getWisdom(): Int {
@@ -22,7 +22,7 @@ class HalfElf : IBreed {
     }
 
     override fun getCharisma(): Int {
-        return 0
+        return 2
     }
 
 }

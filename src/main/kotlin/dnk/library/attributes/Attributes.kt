@@ -1,4 +1,4 @@
-package com.github.luizredig.dungeons_n_kotlin.attributes
+package dnk.library.attributes
 
 class Attributes {
     var strength: Int = 8
