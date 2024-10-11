@@ -3,8 +3,9 @@ package dnk.library.character
 import dnk.library.attributes.Attributes
 import dnk.library.breeds.IBreed
 import dungeons_n_kotlin.classes.modifiers.AttributesModifier
+import java.io.Serializable
 
-class Character {
+class Character : Serializable {
     lateinit var name: String
 
     lateinit var breed: dnk.library.breeds.IBreed
