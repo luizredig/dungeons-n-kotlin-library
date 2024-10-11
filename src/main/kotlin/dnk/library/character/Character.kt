@@ -13,7 +13,7 @@ class Character : Serializable {
     var healthPoints: Int = 10
 
     fun listAttributes(): String {
-        return if (::name.isInitialized) {
+        return if (name.isNotBlank()) {
             """
             Name: $name
             Breed: ${breed.javaClass.simpleName}
