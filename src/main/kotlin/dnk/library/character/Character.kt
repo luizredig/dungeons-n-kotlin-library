@@ -6,16 +6,15 @@ import dungeons_n_kotlin.classes.modifiers.AttributesModifier
 import java.io.Serializable
 
 class Character : Serializable {
-    lateinit var name: String
+    var name: String = ""
 
     lateinit var breed: dnk.library.breeds.IBreed
-
     lateinit var attributes: dnk.library.attributes.Attributes
-
     var healthPoints: Int = 10
 
     fun listAttributes(): String {
-        return """
+        return if (::name.isInitialized) {
+            """
             Name: $name
             Breed: ${breed.javaClass.simpleName}
             
@@ -29,5 +28,8 @@ class Character : Serializable {
             Wisdom: ${attributes.wisdom}  +(${breed.getWisdom()}) +(${AttributesModifier.calculateAttributeModifier(attributes.wisdom)})
             Charisma: ${attributes.charisma}  +(${breed.getCharisma()}) +(${AttributesModifier.calculateAttributeModifier(attributes.charisma)})
         """.trimIndent()
+        } else {
+            "Character name is not set"
+        }
     }
 }
