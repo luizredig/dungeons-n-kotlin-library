@@ -1,6 +1,7 @@
 package dnk.library.breeds
+import java.io.Serializable
 
-interface IBreed {
+interface IBreed : Serializable {
     fun getStrength(): Int
     fun getDexterity(): Int
     fun getConstitution(): Int
